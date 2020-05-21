@@ -1,7 +1,8 @@
 Unity Point Cloud Demo
 =============================================
 
-The Point cloud importer and shader in this project is from:
+The Point cloud importer and shader in this project is from [Keijiro]
+
 [Keijiro]: https://github.com/keijiro/Pcx
 
 
