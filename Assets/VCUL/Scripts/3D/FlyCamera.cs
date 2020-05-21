@@ -32,6 +32,7 @@ public class FlyCamera : MonoBehaviour
 
     public Text toggleText;
     public GameObject PCD_Mesh;
+    public GameObject Ai_Panel;
 
     private Vector2 cameraRotation;
     private bool cameraLocked = false;

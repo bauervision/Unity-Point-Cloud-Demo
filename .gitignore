@@ -12,6 +12,7 @@ Desktop.ini
 /Library
 /Logs
 /Temp
+/Windows
 
 /Extras/pcx-strip/*.o
 /Extras/pcx-strip/pcx-strip
