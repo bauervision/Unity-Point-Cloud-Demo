@@ -32,12 +32,16 @@ public class FlyCamera : MonoBehaviour
 
     public Text toggleText;
     public GameObject PCD_Mesh;
-    public GameObject Ai_Panel;
 
     private Vector2 cameraRotation;
     private bool cameraLocked = false;
     private float newPointSize = 0.05f;
+    private Material shader;
 
+    private void Awake()
+    {
+        shader = PCD_Mesh.GetComponent<Renderer>().sharedMaterial;
+    }
 
     // Update is called once per frame
     private void Update()
@@ -45,7 +49,6 @@ public class FlyCamera : MonoBehaviour
         if (Input.GetKeyDown("space"))
         {
             cameraLocked = !cameraLocked;
-
         }
 
         toggleText.text = cameraLocked ? "UI Enabled" : "Hit Space Bar\nto Enable UI Interaction";
@@ -59,7 +62,6 @@ public class FlyCamera : MonoBehaviour
 
     private void handleShaderUpdate()
     {
-        var shader = PCD_Mesh.GetComponent<Renderer>().sharedMaterial;
         shader.SetFloat("_PointSize", newPointSize);
 
     }

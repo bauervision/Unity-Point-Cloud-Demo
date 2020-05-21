@@ -36,6 +36,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Billboard.cs" />
+     <Compile Include="Assets\Scripts\InteractionsManager.cs" />
      <Compile Include="Assets\Test\PointAnimation.cs" />
      <Compile Include="Assets\VCUL\Scripts\2D\FlyCamera2D.cs" />
      <Compile Include="Assets\VCUL\Scripts\2D\MultiTargetCamera.cs" />
